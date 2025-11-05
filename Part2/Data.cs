@@ -1,8 +1,8 @@
 public class Data
 {
-    public int Year { get; set; }
-    public int Month { get; set; }
-    public int Day { get; set; }
+    public int Year;
+    public int Month;
+    public int Day;
 
     public Data()
     {
@@ -19,6 +19,7 @@ public class Data
         int daysInMonth = DateTime.DaysInMonth(this.Year, this.Month);
         this.Day = (day >= 1 || day <= daysInMonth) ? day : 1;
     }
+
 
 
 }
